@@ -18,7 +18,7 @@ candidates = {
 }
 
 
-# If the candidate is the voted 1st, they get 3 pts. If voted 2nd, 2pts. And if 3rd, 1pt.
+# If the candidate is the voted 1st, they get 4 pts. If voted 2nd, 2pts. And if 3rd, 1pt.
 
 def results(ballots, candidates)
 
