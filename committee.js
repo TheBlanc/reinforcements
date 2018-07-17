@@ -37,11 +37,11 @@ var project = {
 var i = 0;
 project.steps = project.steps.map( function(step) {
 
-  if (i > 2) { i = 0; }
+
   step = {
     description: step.description,
     dueDate: step.dueDate,
-    person: project.committee[i],
+    person: project.committee[i%3],
 
   }
 
