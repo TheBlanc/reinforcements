@@ -11,17 +11,18 @@
 
 def two_sum(numbers, target)
   numbers.each_with_index do |num, index|
-
-    while x < numbers.length do
-      x = 1
+    x = 1
+    while x < numbers.length
       if num + numbers[index + x] == target
         return [index, x - 1]
-      x++
       end
+      x += 1
     end
   end
 end
 
+
+
 numbers = [4, 2, 9, 14]
 
-print two_sum(numbers, 11)
+pp two_sum(numbers, 11)
